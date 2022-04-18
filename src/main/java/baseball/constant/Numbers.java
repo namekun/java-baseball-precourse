@@ -1,5 +1,8 @@
 package baseball.constant;
 
+/**
+ * 게임에 사용될 숫자
+ */
 public enum Numbers {
 
     RANGE_MIN_NUMBER(1),

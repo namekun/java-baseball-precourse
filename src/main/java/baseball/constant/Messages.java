@@ -1,5 +1,8 @@
 package baseball.constant;
 
+/**
+ * 게임에 사용될 메세지
+ */
 public enum Messages {
 
     INPUT_MSG("숫자를 입력해주세요 : "),

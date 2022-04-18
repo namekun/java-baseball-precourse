@@ -3,7 +3,11 @@ package baseball.view;
 import baseball.constant.Messages;
 import baseball.game.model.GameResult;
 
+/**
+ * 사용자에게 보여지는 뷰
+ */
 public class GameView {
+
     public void askInputView(){
         System.out.print(Messages.INPUT_MSG.getMsg());
     }
@@ -18,17 +22,17 @@ public class GameView {
         }
 
         if(ballCount > 0 && strikeCount > 0){
-            System.out.printf((Messages.GAME_RESULT_COMBINE_MSG.getMsg()) + "%n", ballCount, strikeCount);
+            System.out.printf(Messages.GAME_RESULT_COMBINE_MSG.getMsg() + "%n", ballCount, strikeCount);
             return;
         }
 
         if(ballCount > 0 && strikeCount == 0){
-            System.out.printf((Messages.GAME_RESULT_BALL_MSG.getMsg()) + "%n", ballCount);
+            System.out.printf(Messages.GAME_RESULT_BALL_MSG.getMsg() + "%n", ballCount);
             return;
         }
 
         if(strikeCount > 0 && ballCount == 0){
-            System.out.printf((Messages.GAME_RESULT_STRIKE_MSG.getMsg()) + "%n", strikeCount);
+            System.out.printf(Messages.GAME_RESULT_STRIKE_MSG.getMsg() + "%n", strikeCount);
         }
     }
 

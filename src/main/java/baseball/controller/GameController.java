@@ -20,6 +20,9 @@ public class GameController {
         this.gameView = gameView;
     }
 
+    /**
+     * 야구 게임의 본 로직
+     */
     public void playBall() {
         List<Integer> targetNumberList = randomNumberGenerator.generate();
 
@@ -44,6 +47,10 @@ public class GameController {
         }
     }
 
+    /**
+     * 해당 게임이 끝났는지 (스트라이크가 3인지) 에 대한 여부 판단 메서드
+     * @param gameResult :  게임의 결과
+     */
     private boolean isGameEnd(GameResult gameResult){
         return gameResult.getStrikeCount() == 3;
     }
