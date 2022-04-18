@@ -25,4 +25,14 @@ public class InputTool {
 
         return numberInput;
     }
+
+    public boolean replayInput(){
+        String input = readLine();
+
+        if(!validationChecker.validateReplayInput(input)){
+            throw new IllegalArgumentException();
+        }
+
+        return Integer.parseInt(input) == 1;
+    }
 }
