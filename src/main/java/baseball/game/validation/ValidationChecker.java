@@ -25,6 +25,6 @@ public class ValidationChecker {
     }
 
     public boolean validateReplayInput(String input) {
-        return Character.isDigit(input.charAt(0)) && input.length() == 1 && Integer.parseInt(input) < 3 && Integer.parseInt(input) > 0;
+        return input.length() == 1 && Character.isDigit(input.charAt(0)) && Integer.parseInt(input) < 3 && Integer.parseInt(input) > 0;
     }
 }
